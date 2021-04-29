@@ -19,15 +19,14 @@ void setup() {
   Serial.begin(9600);
 }
 void loop() {
-//  scan360();
-  for(int i = 0 ; i < 200; ++i)
-    motorStep();
+  delay(10000);
+  scan360();
   changeDir();
-  delay(1000);
-  for(int i = 0 ; i < 200; ++i)
+  for(int i = 0 ; i < 200 ; ++i)
     motorStep();
   delay(1000);
-  changeDir();  
+  changeDir();
+ 
 }
 
 void scan360(){
